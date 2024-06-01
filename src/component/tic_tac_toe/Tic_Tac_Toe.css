@@ -1,0 +1,24 @@
+/* .board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2px;
+} */
+
+.board_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.__board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px; /* Set the width of the board */
+}
+
+.__board button {
+    flex: 0 0 calc(33.33% - 4px); /* Adjust button width for 3 buttons per row */
+    margin: 2px; /* Add margin between buttons */
+    height: 100px; /* Set the height of each button */
+}
